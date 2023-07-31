@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best e-commerce store</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .navbar {
+        display: block;
+        position: absolute;
+        height: 92px;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+
+    }
+
+    #logo {
+        height: 48px;
+        width: 173px;
+        position: absolute;
+        top: 24px;
+        left: 38px;
+    }
+
+    #logo:hover {
+        cursor: pointer;
+    }
+
+    #navtext {
+        display: inline;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #navtext li {
+        display: inline-block;
+        text-align: right;
+        position: relative;
+        left: 769px;
+        top: 24px;
+        margin-right: 38px;
+
+    }
+
+    #navtext li a {
+        text-decoration: none;
+        font-size: 26px;
+        color: white;
+        font-family: 'Baloo Bhai';
+    }
+
+    #navtext li a:hover {
+        color: grey;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 92px;
+        font-size: 37px;
+        margin-left: 144px;
+        width: 629px;
+    }
+
+    .row2 {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .col-1 img {
+        width: 728px;
+        height: 526px;
+        position: absolute;
+        left: 777px;
+    }
+
+    .col-2 {
+        font-family: 'Bree Serif', serif;
+        padding-bottom: 112px;
+    }
+
+    .col-2 p {
+        position: relative;
+        top: -28px;
+    }
+
+    .btn {
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 21px;
+        text-decoration: none;
+        position: absolute;
+        left: 262px;
+        top: 551px;
+        font-family: 'Baloo Bhai';
+        transition: 0.5s;
+    }
+
+    .btn-2 {
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-decoration: none;
+        position: absolute;
+        left: 1px;
+        top: 180px;
+        font-family: 'Baloo Bhai';
+        transition: 0.5s;
+    }
+
+    .btn-2:hover {
+        background-color: #563434;
+    }
+
+    .btn:hover {
+        background-color: #563434;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    }
+
+    #cart {
+        position: absolute;
+        height: 40px;
+        width: 51px;
+        left: 1438px;
+        top: 23px;
+    }
+
+    #cart:hover {
+        cursor: pointer;
+    }
+
+    .col-1 img {}
+
+    .col3 img {
+        width: 302px;
+        height: 300px;
+        /* position: relative;
+    left: -144px; */
+        /* padding-left: 20px; */
+        padding-left: 12px;
+        padding-right: 23px;
+        /* margin-right: 38px; */
+    }
+
+    .col-4 img {
+        width: 302px;
+        height: 300px;
+        /* position: relative;
+    left: -144px; */
+        /* padding-left: 20px; */
+        padding-left: 12px;
+        padding-right: 23px;
+        /* margin-right: 38px; */
+        cursor: pointer;
+    }
+
+    .featuredcategory {
+        background-color: white;
+        padding-bottom: 63px;
+    }
+
+    .small-container {
+        max-width: 1080px;
+        margin: auto;
+        padding-top: 51px;
+        position: relative;
+        top: 67px;
+    }
+
+    .h2content {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 108px;
+        font-size: 38px;
+    }
+
+    .h2content-2 {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-size: 38px;
+        margin: 0;
+        top: 63px;
+        background-color: white;
+    }
+
+    .h2content-3 {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-size: 38px;
+        margin: 0;
+        top: -38px;
+        background-color: white;
+    }
+
+    .h2content-4 {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-family: 'Bree Serif', serif;
+        margin: 0;
+        top: -52px;
+        left: 255px;
+        font-size: 74px;
+
+    }
+
+    .col-4 h4 {
+        color: #555;
+        font-weight: normal;
+        padding-left: 12px;
+        padding-right: 23px;
+    }
+
+    .col-4 p {
+        font-size: 14px;
+        padding-left: 12px;
+        padding-right: 23px;
+    }
+
+    .col-4 .rating {
+        padding-left: 12px;
+        padding-right: 23px;
+    }
+
+    .col-4 img:hover {
+        transform: scale(1.2);
+
+    }
+
+    .col-4 {
+        transition: ease-in-out;
+    }
+
+    .offer {
+        height: 565px;
+    }
+
+    .rating .fa {
+        color: #ff523b;
+
+    }
+
+    .col3 img:hover {
+        transform: scale(1.2);
+    }
+
+    .col-5 #p-1 {
+        font-size: 32px;
+        position: relative;
+        top: 90px;
+    }
+
+    .col-5 h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .col-5 p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .col-5 .h2content-4 {
+        font-size: 49px;
+    }
+
+    .h2content-5 {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-family: 'Bree Serif', serif;
+        margin: 0;
+        top: -52px;
+        left: 255px;
+        font-size: 49px;
+    }
+
+    .testimonal {
+        padding-bottom: 139px;
+        background-color: white;
+    }
+
+    .testimonal .col-6 {
+        font-size: 19px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .testimonal .col-6 :hover {
+        transform: scale(1.2);
+    }
+
+    .testimonal .rating {
+        position: relative;
+        top: -9px;
+    }
+
+    .testimonal .col-6 img {
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .testimonal h3 {
+        font-size: 21px;
+        position: relative;
+        top: -20px;
+    }
+
+    .fa.fa-quote-left {
+        font-size: 34px;
+        color: #ff523b;
+    }
+
+    .brand {
+        padding-bottom: 72px;
+        background-color: white;
+    }
+
+    .brand .small-container {
+        position: relative;
+        top: -10px;
+    }
+
+    .brand img {
+        filter: grayscale(100%);
+        margin: 10px;
+    }
+
+    .brand img:hover {
+        filter: grayscale(0%);
+        cursor: pointer;
+    }
+
+    .footer {
+        background-color: #000;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 60px 0px 20px;
+    }
+
+    .footer .footer-col-1 p {
+        color: #8a8a8a;
+        padding-right: 200px;
+    }
+
+    .footer h3 {
+        color: #fff;
+    }
+
+    .footer-col-1 {
+        position: relative;
+        top: 21px;
+        left: 41px;
+    }
+
+    .footer-col-2 {
+        color: #f8f8f8;
+        position: relative;
+        left: 25px;
+        padding-right: 143px;
+
+    }
+
+    .footer-col-2 img:hover {
+        cursor: pointer;
+    }
+
+    .footer-col-3 li {
+        list-style: none;
+        color: white;
+        font-size: 19px;
+        position: relative;
+        left: -27px;
+    }
+
+    .footer-col-3 h3:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .footer-col-3 li:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .footer-col-3 h3 {
+        font-size: 22px;
+        margin: 0px;
+    }
+
+    .footer-col-4 h3 {
+        margin: 0px;
+        padding-left: 21px;
+        font-size: 22px;
+    }
+
+    .footer-col-4 h3:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .footer-col-4 a:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .footer-col-4 {
+        padding-left: 70px;
+    }
+
+    .footer-col-4 li {
+        list-style: none;
+        color: white;
+    }
+
+    .footer-col-4 li a {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    .app-store img {
+        top: -68px;
+        height: 35px;
+        position: relative;
+        padding-bottom: 29px;
+        left: 136px;
+    }
+
+    .app-store img:hover {
+        cursor: pointer;
+    }
+
+    .play-store img {
+        height: 35px;
+        position: relative;
+        padding-bottom: 29px;
+        left: -18px;
+    }
+
+    .play-store img:hover {
+        cursor: pointer;
+    }
+
+    .center {
+        position: absolute;
+        color: white;
+        padding-top: 210px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <div>
+            <img src="images/logo.png" id="logo" alt="Myonlinemeal">
+        </div>
+        <div>
+            <ul id="navtext">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">product</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Contact </a></li>
+                <li class="item"><a href="">Account</a></li>
+                <img src="images/cart.png" id="cart" alt="">
+            </ul>
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give your WorkOut <br> A New style!</h1>
+                <p>Success is not all about greatness. It's about consistency. Consistent Hardwork gains success.
+                    Greatness will come</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+
+
+            <div class="col-1">
+                <img src="images/image1.png" alt="">
+            </div>
+        </div>
+        <!-- featerd categories -->
+        <h2 class="h2content">Featured Categories</h2>
+        <div class="featuredcategory">
+            <div class="small-container">
+                <div class="row2">
+
+                    <div class="col3">
+                        <img src="images/category-1.jpg" alt="">
+                    </div>
+                    <div class="col3">
+                        <img src="images/category-2.jpg" alt="">
+                    </div>
+                    <div class="col3">
+                        <img src="images/category-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Featured product -->
+
+        <div class="featuredcategory">
+            <h2 class="h2content-2">Featured Product</h2>
+            <div class="small-container">
+                <div class="row2">
+                    <div class="col-4">
+                        <img src="images/product-1.jpg" alt="">
+                        <h4>Red printed T-shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Rs:-1599</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-2.jpg" alt="">
+                        <h4>Jordan shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs:-2999</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-3.jpg" alt="">
+                        <h4>Lower </h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Rs:-999</p>
+                    </div>
+                    <div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="small-container">
+                <!-- <h2 class="h2content-2">Latest product</h2> -->
+                <div class="row2">
+                    <div class="col-4">
+                        <img src="images/product-4.jpg" alt="">
+                        <h4>Black T-shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Rs:-1499</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-5.jpg" alt="">
+                        <h4>Adidas shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs:-1599</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-6.jpg" alt="">
+                        <h4>Black printed shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Rs:-1299</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="small-container">
+                <h2 class="h2content-3">Latest product</h2>
+                <div class="row2">
+                    <div class="col-4">
+                        <img src="images/product-7.jpg" alt="">
+                        <h4>sox of set-3</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Rs:-599</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-8.jpg" alt="">
+                        <h4>Watch 5 series</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs:-3599</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-9.jpg" alt="">
+                        <h4>Watch 7-series</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Rs:-4999</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="offer">
+            <div class="small-container">
+                <div class="row2">
+                    <div class="col-4">
+                        <h2 class="h2content-5">Exclusive Offer</h2>
+                        <img src="images/exclusive.png" class="exclusive-offer " alt="">
+                    </div>
+                    <div class="col-5">
+                        <div id="p-1">
+                            <small>Exclusive availabe on redstore at 40% Off<small>
+
+                                    <h1>Smart Band Watch</h1>
+                                    <small>Mi smart watch with the feature of health , smart mobile control , oled
+                                        display , track of daily routine and much more on at Rs 4999.</small>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+
+                                    <a href="" class="btn-2">Buy Now</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonal">
+            <div class="small-container">
+                <div class="row2">
+                    <div class="col-6">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime velit facere quod quae
+                            perferendis veniam officiis explicabo, inventore porro.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-1.png" alt="">
+                        <h3>seive avatar</h3>
+                    </div>
+                    <div class="col-6">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime velit facere quod quae
+                            perferendis veniam officiis explicabo, inventore porro.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-2.png" alt="">
+                        <h3>John seivels</h3>
+                    </div>
+                    <div class="col-6">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime velit facere quod quae
+                            perferendis veniam officiis explicabo, inventore porro.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-3.png" alt="">
+                        <h3>Dwayne johnson</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="brand">
+            <div class="small-container">
+                <h2 class="h2content-3">Our clients</h2>
+                <div class="row2">
+                    <div class="col-7">
+                        <img src="images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <img src="images/logo-philips.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row2">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download Our app for android and ios</p>
+                        <div class="play-store">
+                            <img src="images/play-store.png" alt="">
+
+                        </div>
+                        <div class="app-store">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                        <p>Our purpose is to substainably make the pleasure and accesible of sports to many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Usefull links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join Affilates</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/vishalkhatri211/" class="anchortag">Instagram</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/vishal-khatri-1a8a70237/"
+                                    class="anchortag">Linkedin </a></li>
+                            <li><a href="" class="anchortag">Facebook</a></li>
+                            <li><a href="https://twitter.com/VishalK56868919" class=" anchortag">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        Copyright &copy; www.Red-store.com. All rights reserved!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </nav>
+
+
+</body>
+
+</html>
